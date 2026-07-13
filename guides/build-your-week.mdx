@@ -1,0 +1,72 @@
+---
+title: "Plan and Schedule Your Weekly Workouts"
+sidebarTitle: "Build Your Week"
+description: "Add workout sessions to your weekly board, track total minutes, and let FitStart Planner save your schedule automatically in the browser."
+---
+
+The Weekly Planner turns a loose list of workout ideas into a structured, day-by-day schedule you can actually follow. Every session you add appears on a visual board organized by day, and a running summary keeps you honest about how many sessions you've committed to and how many total minutes you're planning to move. Best of all, your plan is saved automatically — close the tab, come back tomorrow, and everything is still there.
+
+## Opening the Weekly Planner
+
+Navigate to the Weekly Planner page in your browser. You'll see the scheduling form on the left and the weekly board on the right (or stacked vertically on smaller screens).
+
+## Adding a Workout Session
+
+<Steps>
+  <Step title="Choose a day">
+    In the **Day** dropdown, select the day of the week you want to schedule the session — **Monday** through **Sunday**. This field is required.
+  </Step>
+  <Step title="Name the workout">
+    In the **Workout** text field, type the name of the routine you want to do — for example, `Beginner Cardio` or `Morning Stretch`. This field is required.
+  </Step>
+  <Step title="Set the duration">
+    Enter the number of minutes in the **Duration** field. The accepted range is **5 to 180 minutes**. This field is required.
+  </Step>
+  <Step title="Add optional notes">
+    Use the **Notes** textarea to jot down anything personal — a focus cue, a modification, or a reminder. This field is optional and can be left blank.
+  </Step>
+  <Step title="Submit the session">
+    Click the **Add Session** button. The session card immediately appears on the weekly board under the day you selected.
+  </Step>
+</Steps>
+
+## Reading the Weekly Board
+
+Each session card on the board displays:
+
+- **Workout name** — the text you entered in the Workout field
+- **Duration** — shown in minutes
+- **Notes** — displayed beneath the workout name if you added any
+- **Remove button** — deletes that individual session from the board
+
+Below the board, the **summary line** gives you a quick snapshot of your week, for example:
+
+> _3 sessions planned • 55 total minutes_
+
+The session count and total minutes update automatically every time you add or remove a session.
+
+<Info>
+  The summary line counts every session across all days, not just the ones visible on screen. Use it as a quick gut-check before committing to your week.
+</Info>
+
+## Removing Sessions
+
+**To remove a single session**, click the **Remove** button on that session's card. The card disappears immediately and the summary line recalculates.
+
+**To wipe the entire plan**, click the **Clear All** button. This removes every session from every day at once.
+
+<Warning>
+  Clicking **Clear All** is permanent — there is no undo. Double-check your plan before clearing it if you want to keep any sessions.
+</Warning>
+
+## How Your Plan Is Saved
+
+FitStart Planner saves your weekly schedule automatically to your browser's localStorage under the key `fitstart_weekly_plan`. You don't need an account, and there's nothing to manually export or sync.
+
+<Tip>
+  Because the data lives in your browser, your plan persists when you close the tab and reopen it later — even after restarting your computer. Just return to the Weekly Planner page in the same browser on the same device and your sessions will be right where you left them.
+</Tip>
+
+<Note>
+  localStorage is specific to the browser and device you're using. If you switch to a different browser or a different device, you'll start with a blank plan. Clearing your browser's site data will also erase your saved schedule.
+</Note>

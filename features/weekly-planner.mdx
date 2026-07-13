@@ -1,0 +1,84 @@
+---
+title: "Weekly Planner: Schedule Your Workout Week"
+sidebarTitle: "Weekly Planner"
+description: "Plan your entire workout week day by day. Sessions are saved automatically in your browser so your schedule is always there when you return."
+---
+
+The Weekly Planner gives you a simple, structured way to turn individual workouts into a consistent weekly routine. Add as many sessions as you like across Monday through Sunday, set a duration for each one, and leave yourself notes as reminders. Everything you enter is saved automatically in your browser — no account or internet connection required to keep your plan intact.
+
+<Note>
+  Your plan is stored in your browser's local storage. It will persist between visits as long as you use the same browser and device. Clearing your browser data will erase your saved sessions.
+</Note>
+
+## Adding a Session
+
+Open the [Weekly Planner page](/features/weekly-planner) and fill out the form at the top of the page to schedule a new workout.
+
+<Steps>
+  <Step title="Choose a day">
+    Open the **Day** dropdown and select the day of the week you want to schedule this session — Monday through Sunday.
+  </Step>
+  <Step title="Enter the workout name">
+    Type a name into the **Workout Name** field. You can use the name of any routine from the Workout Library, or write anything that describes what you plan to do.
+  </Step>
+  <Step title="Set the duration">
+    Enter a number between **5 and 180** in the **Duration** field. The value is in minutes, so a 25-minute Fat Burn Circuit would be entered as `25`.
+  </Step>
+  <Step title="Add optional notes">
+    Use the **Notes** field to leave yourself any reminders — for example, which dumbbell weight to use, how many sets to aim for, or how you felt the last time you did this session. This field is optional.
+  </Step>
+  <Step title="Save the session">
+    Click **Add Session**. The session appears immediately in your weekly schedule below the form, grouped under the day you selected.
+  </Step>
+</Steps>
+
+## Form Field Reference
+
+| Field | Type | Required | Constraints |
+|---|---|---|---|
+| Day | Dropdown | Yes | Monday – Sunday |
+| Workout Name | Text | Yes | Any text |
+| Duration | Number | Yes | 5–180 minutes |
+| Notes | Text | No | Optional free text |
+
+## How Your Plan Is Saved
+
+FitStart Planner saves every session you add to your browser's **localStorage** under the key `fitstart_weekly_plan`. This means:
+
+- Your plan loads automatically every time you revisit the planner page in the same browser.
+- No data is sent to any server — your plan stays entirely on your device.
+- Your plan is independent of any other browser, device, or private/incognito window.
+
+<Info>
+  If you open FitStart Planner in a different browser or on a different device, you will start with an empty plan. There is currently no sync or export feature.
+</Info>
+
+## Removing Sessions
+
+You have two ways to remove sessions from your plan:
+
+<CardGroup cols={2}>
+  <Card title="Remove One Session" icon="trash">
+    Click the **Remove** button next to any individual session to delete just that entry. Your other sessions are not affected.
+  </Card>
+  <Card title="Clear All Sessions" icon="broom">
+    Click the **Clear All** button to delete every session across all days at once. Use this when you want to start your plan from scratch.
+  </Card>
+</CardGroup>
+
+<Warning>
+  **Clear All** permanently deletes your entire saved plan from localStorage. This action cannot be undone. Make sure you've noted down anything you want to keep before clearing.
+</Warning>
+
+## Reading Your Weekly Summary
+
+At the bottom of the planner, the **summary bar** updates automatically as you add and remove sessions. It shows two totals at a glance:
+
+- **Total sessions planned** — the number of individual workout entries across all days.
+- **Total minutes** — the sum of all session durations you've entered.
+
+Use these totals to check that your week is balanced. The American College of Sports Medicine recommends at least 150 minutes of moderate activity per week for beginners — your summary makes it easy to see whether you're on track.
+
+<Tip>
+  Aim to spread your sessions across the week rather than clustering them on consecutive days. Scheduling a [Walking Recovery Flow](/features/workout-library) or rest day between harder sessions helps your body recover and reduces the risk of injury.
+</Tip>

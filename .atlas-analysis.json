@@ -1,0 +1,71 @@
+{
+  "projectType": "frontend",
+  "projectName": "FitStart Planner",
+  "projectDescription": "A beginner-friendly fitness planning web app offering workout routines, a weekly schedule planner, nutrition guidance, and interactive tools like a BMI calculator and water intake tracker.",
+  "theme": "almond",
+  "primaryColor": "#952f4e",
+  "lightColor": "#166b45",
+  "darkColor": "#b4c78a",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guide",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "introduction",
+              "getting-started"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/workout-library",
+              "features/weekly-planner",
+              "features/nutrition",
+              "features/fitness-tools"
+            ]
+          },
+          {
+            "group": "Using the App",
+            "pages": [
+              "guides/browse-workouts",
+              "guides/build-your-week",
+              "guides/track-nutrition",
+              "guides/bmi-calculator"
+            ]
+          },
+          {
+            "group": "Help",
+            "pages": [
+              "help/faq",
+              "help/tips"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Workout library with filtering by goal, level, and keyword",
+    "Random workout generator for quick session ideas",
+    "Weekly planner with localStorage persistence",
+    "BMI calculator with health category feedback",
+    "Daily water intake calculator based on weight and activity level",
+    "Randomized meal idea generator (protein, carb, vegetables, fat)",
+    "Daily fitness tip generator",
+    "Newsletter signup for personalized workout plans",
+    "Product review form with animated confirmation and review counter"
+  ],
+  "publicApiSurface": [
+    "BMI Calculator — calculateBMI(height, weight) → { value, category, message, color }",
+    "Water Intake Calculator — calculateDailyWater(weightKg, activityMultiplier) → liters",
+    "Workout Filter — filter by goal (weight-loss, strength, mobility, endurance), level (beginner, easy, intermediate), and keyword search",
+    "Weekly Plan — add/remove/clear sessions stored in localStorage (key: fitstart_weekly_plan)",
+    "Random Workout Generator — picks a random entry from the workouts array",
+    "Meal Idea Generator — random protein, carb, vegetable, and healthy fat combination",
+    "Product Review Form — submits via GET to review.html with params: productName, rating, installDate, features, writtenReview, userName",
+    "Review Counter — persisted in localStorage (key: reviewCount), animated on load"
+  ]
+}
